@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Statikus oldal</title>
+</head>
+<body>
+    <form  method="post">
+        <div class="container">
+          <h2>Iratkozz fel a hírlevelünkre!</h2>
+          <p>Le ne maradj!!!</p>
+        </div>
+      
+        <div class="container" style="background-color:white">
+          <input type="text" placeholder="Név" name="name" id="name" required>
+          <input type="text" placeholder="E-mail cím " name="email" id="email" required>
+          <input type="text" placeholder="Város" name="town" id="town" required>
+          <input type="text" placeholder="Irányítószám" name="town_id" id="town_id" required>
+          <input type="text" placeholder="Születési dátum" name="birth_date" id="birth_date" required>
+
+
+
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Elfogadom az adatkezelési szabályzatot!
+          </label>
+        </div>
+      
+        <div class="container">
+            <button onclick="sendPost()" id="sub" type="submit" value="Submit">Feliratkozás</button>
+        
+        </div>
+      </form>
+      <script src="add.js">
+    </script>
+</body>
+</html>
